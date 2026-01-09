@@ -9,7 +9,7 @@
 * **Ethical Automation:** Maintains full control over your contact list without violating platform terms of service.
 * **Lightweight & Scalable:** Easy to set up and extend for various industries.
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies Used 
 
 * **Runtime:** Node.js
 * **Email Engine:** Nodemailer
