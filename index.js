@@ -16,7 +16,7 @@ function emailTemplate(recruiter) {
   return `
 Hello ${recruiter.name},
 
-I hope you are doing well. My name is Delali, a Level 300 Computer Science student at the University of Ghana.
+I hope you are doing well. My name is Elliot, a Level 300 Computer Science student at the University of Ghana.
 
 I am currently seeking internship opportunities in software development and would love to know if there are any openings at ${recruiter.company}.
 
@@ -25,7 +25,7 @@ I have experience with React, Node.js, MongoDB, and REST APIs, and I am eager to
 Thank you for your time and consideration.
 
 Kind regards,  
-Delali
+Elliot
 `;
 }
 
@@ -34,7 +34,7 @@ async function sendEmails() {
   for (const recruiter of recruiters) {
     try {
       await transporter.sendMail({
-        from: `"Delali" <${process.env.EMAIL_USER}>`,
+        from: `"Elliot" <${process.env.EMAIL_USER}>`,
         to: recruiter.email,
         subject: "Computer Science Student Seeking Internship Opportunity",
         text: emailTemplate(recruiter)
